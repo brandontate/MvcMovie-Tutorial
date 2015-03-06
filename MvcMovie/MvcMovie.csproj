@@ -166,6 +166,23 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201503052154348_InitialCreate.cs" />
+    <Compile Include="Migrations\201503052154348_InitialCreate.Designer.cs">
+      <DependentUpon>201503052154348_InitialCreate.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201503052227214_Ratings.cs" />
+    <Compile Include="Migrations\201503052227214_Ratings.Designer.cs">
+      <DependentUpon>201503052227214_Ratings.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201503052319043_DataAnnotations.cs" />
+    <Compile Include="Migrations\201503052319043_DataAnnotations.Designer.cs">
+      <DependentUpon>201503052319043_DataAnnotations.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201503060021395_AddRazzie.cs" />
+    <Compile Include="Migrations\201503060021395_AddRazzie.Designer.cs">
+      <DependentUpon>201503060021395_AddRazzie.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Models\AccountViewModels.cs" />
     <Compile Include="Models\IdentityModels.cs" />
     <Compile Include="Models\ManageViewModels.cs" />
@@ -600,6 +617,20 @@
     <Content Include="fonts\glyphicons-halflings-regular.eot" />
     <Content Include="packages.config" />
     <None Include="Project_Readme.html" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201503052154348_InitialCreate.resx">
+      <DependentUpon>201503052154348_InitialCreate.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201503052227214_Ratings.resx">
+      <DependentUpon>201503052227214_Ratings.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201503052319043_DataAnnotations.resx">
+      <DependentUpon>201503052319043_DataAnnotations.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201503060021395_AddRazzie.resx">
+      <DependentUpon>201503060021395_AddRazzie.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

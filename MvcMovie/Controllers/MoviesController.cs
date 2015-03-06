@@ -42,7 +42,7 @@ namespace MvcMovie.Controllers
             return View(movies);
         }
 
-        // GET: Movies/Details/5
+       // GET: Movies/Details/5
         public ActionResult Details(int? id)
         {
             if (id == null)
@@ -68,7 +68,7 @@ namespace MvcMovie.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Create([Bind(Include = "ID,Title,ReleaseDate,Genre,Price")] Movie movie)
+        public ActionResult Create([Bind(Include = "ID,Title,ReleaseDate,Genre,Price,Rating,Razzie")] Movie movie)
         {
             if (ModelState.IsValid)
             {
@@ -100,7 +100,7 @@ namespace MvcMovie.Controllers
         // more details see http://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public ActionResult Edit([Bind(Include = "ID,Title,ReleaseDate,Genre,Price")] Movie movie)
+        public ActionResult Edit([Bind(Include = "ID,Title,ReleaseDate,Genre,Price,Rating,Razzie")] Movie movie)
         {
             if (ModelState.IsValid)
             {
